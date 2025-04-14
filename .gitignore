@@ -1,0 +1,50 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Flask instance folder
+instance/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pytest
+.cache
+
+# Coverage reports
+htmlcov/
+*.cover
+*.py,cover
+.coverage
+coverage.xml
+*.coveragerc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Generated QR code images
+QRgenerated.png
+
+# Environment variables
+.env
