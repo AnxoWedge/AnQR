@@ -14,6 +14,10 @@ def generate_qr():
     data = request.json
     print(data)
     url = data.get('url')
+
+    if data.get('color'):color = data.get('color')
+    else:color = "#000"
+    
     logo_link = data.get('logo', None)  # Optional logo link
 
     # Check if URL is provided
@@ -41,7 +45,7 @@ def generate_qr():
     Qrcode.make()
 
     # Asking for color and adding color
-    QRcolor = '#000'
+    QRcolor = color
     BGcolor = '#fff'
 
     # Generate the QR code image
