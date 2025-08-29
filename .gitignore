@@ -48,3 +48,7 @@ QRgenerated.png
 
 # Environment variables
 .env
+
+
+#Frontend
+frontend/

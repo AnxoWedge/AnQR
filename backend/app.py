@@ -17,6 +17,9 @@ def generate_qr():
 
     if data.get('color'):color = data.get('color')
     else:color = "#000"
+
+    if data.get('bgcolor'):bgcolor = data.get('bgcolor')
+    else:bgcolor = "#fff"
     
     logo_link = data.get('logo', None)  # Optional logo link
 
@@ -46,7 +49,7 @@ def generate_qr():
 
     # Asking for color and adding color
     QRcolor = color
-    BGcolor = '#fff'
+    BGcolor = bgcolor
 
     # Generate the QR code image
     QRimg = Qrcode.make_image(
